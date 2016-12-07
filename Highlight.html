@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<!--
+<h1>My Second Homework Problem, Answer</h1>
+<!--Displays Hello World -->
+-->
+<!--
+<p id="task">We have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate)
+    who want to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.</p>
+-->
+<!--Changes Hello World to "Good Night World!"-->
+
+<script>
+    document.getElementsByTagName('strong').style.color = "red";
+   // document.getElementById("task");
+    // iterate all bold tags and change color
+    // Collect all <strong> tags
+    /*
+    function wordItems()
+    {
+        wordItems = document.getElementsByTagName('strong');
+    } */
+   /* function highlight()
+    {
+        for (var i=0; i<wordItems.length; i++)
+        {
+            wordItems[i].style.color = "red";
+        }
+    }
+
+    // On mouse out highlighted words become black
+    function return_normal()
+    {
+        for (var i=0; i<wordItems.length; i++)
+        {
+            wordItems[i].style.color = "black";
+        }
+    }*/
+
+    function BankAcct () {
+        this.acctNum = 0000000000;
+        this.acctOwner = "";
+        this.checkBalance = 00000;
+        this.acctType = "acctType";
+
+    }
+
+    var amount = prompt("Enter amount: ");
+
+    function  checkTransfer (amount, checkBalance) {
+checkBalance = 500;
+        var checking = checkBalance + amount;
+        if (checking > 0)
+        {
+            console.log("Amount after transfer: " + checking);
+
+        }
+    }
+
+    var Peter = new BankAcct();
+    Peter.acctNum = 1234557890;
+    Peter.acctOwner = "Peter Chun";
+    Peter.checkBalance = 100;
+
+   console.log("Account Name" + Peter.name);
+    console.log("Peter's account Balance" + Peter.checkBalance);
+    console.log("Already entered Account Balance is: " + checkTransfer(100,400));
+    console.log("Prompted Balance: " + checkTransfer());
+
+    //console.log("Your Balance 2 is: " + checkTransfer());
+
+</script>
+
+</body>
